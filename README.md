@@ -3,7 +3,7 @@ This Python script extracts station ID and lat-lon coordinates from TMY3 files.
 
 ## Variables
 * `directory` is the head (excluding file name, which is the tail) of the path to your TMY3 files
-* `tmy_mapping` is and empty list which will be popoulated line by line with staion ID's and lat-lon coordinates
+* `tmy_mapping` is an empty list which will be popoulated line by line with staion ID's and lat-lon coordinates
 * `output_file` is a variable that points to a pre-gnereated blank text file (in this case called "mapped.txt") to which the extracted Station ID and lat-lon coordinates will be written
 
 ## Use
