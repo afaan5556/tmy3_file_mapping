@@ -27,5 +27,9 @@ for roots, dirs, files in os.walk(directory):
 
 
 with open(output_file, "w") as f:
+	# Write the column headers in as the first row of the file
+	mywriter = csv.writer(f)
+	mywriter.writerow(csv_columns)
+	# Write the extracted station data in as the subsequent rows of the file
 	for line in tmy_mapping:
 		f.write("%s\n" % line) #This writes the line followed by a new line escape slash
