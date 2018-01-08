@@ -6,6 +6,7 @@ from pprint import pprint
 directory = "../Data/Raw_Data/" # The file used later is just the tail of the path (i.e. file name only) Need to add this to give full path
 tmy_mapping = [] # Empty array to put our final station_ID, Lat, Lon points into
 output_file = "extracted.txt" # A text file in the root folder to which the extracted data will be written
+csv_columns = ['Station_ID', 'Station_Name', 'State', 'Time_Zone', 'Lat', 'Lon', 'Elevation']
 
 # Function that takes a csv file and iterates 1 time to read the first row and appends the needed data to a list
 def get_head(csv_file):
