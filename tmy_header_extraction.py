@@ -11,7 +11,7 @@ csv_columns = ['Station_ID', 'Station_Name', 'State', 'Time_Zone', 'Lat', 'Lon',
 def get_head(csv_file):
 	with open(csv_file, "rt") as f:
 		# Read in the first line, split it on end line character, then split the first element on the comma
-		head = f.readline().split('/n')[0].split(',')
+		head = f.readline().split('\n')[0].split(',')
 	# Set up a blank string to populate for each station
 	output_string = ""
 	for i in range(0, len(head)):
